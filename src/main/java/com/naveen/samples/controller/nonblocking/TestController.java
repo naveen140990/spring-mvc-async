@@ -52,6 +52,12 @@ public class TestController {
             new RestTemplate().getForObject(url, Boolean.TYPE);
             return "Async blocking...";
         },asyncTaskExecutor);
+        /*return () -> {
+            String url = "http://localhost:8090/sleep/1000";
+            new RestTemplate().getForObject(url, Boolean.TYPE);
+            return "Async blocking...";
+        };
+*/
     }
 
     @GetMapping(value = "/asyncNonBlockingRequestProcessing")
@@ -65,4 +71,6 @@ public class TestController {
             });
             return listenableFuture.toCompletableFuture();
     }
+
+
 }

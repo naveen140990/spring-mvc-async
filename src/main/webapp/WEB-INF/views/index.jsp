@@ -7,10 +7,10 @@
 <title>PushBuilder demo</title>
 </head>
 <body>
-    <span>PushBuilder demo</span>
+    <span>PushBuilder Sample</span>
     <br>
-    <img src="<c:url value="/resources/logo.png"/>" alt="Logo"
-        height="126" width="411">
+    <img src="<c:url value="/resources/OnlineJavaPapers.png"/>" alt="Logo"
+        height="400" width="400">
     <br>
     <!-- Content -->
 </body>
